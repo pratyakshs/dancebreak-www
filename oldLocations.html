@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+  <head>
+    <title>Dancebreak - Old Locations</title>
+    <!--#include virtual="includes/stdhead.ssi" -->
+    <script src="timetableTables.js"></script>
+    <script src="timetableCode.js"></script>
+    <script>TimetableCode.preprocessEventsData();</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar1"> <p>&nbsp;</p> </div>
+      <div class="content">
+        <!--#include virtual="includes/stdheader.ssi" -->
+        <div id="oldLocations_textContent" class="textContent">
+          <p><strong>Past Locations</strong></p>
+
+          <p>&nbsp;</p>
+          
+          <script>TimetableCode.appendPastEventsTable('oldLocations_textContent');</script>
+          <noscript><p><span class="red"><strong><em>You must enable Javascript to view the old locations table.</em></strong></span></p></noscript>
+
+          <p>&nbsp;</p>
+
+        </div> <!-- end textContent -->
+      </div> <!-- end content -->
+      <div class="sidebar2"> <h4>&nbsp;</h4> </div>
+    </div> <!-- end containter -->
+  </body>
+</html>

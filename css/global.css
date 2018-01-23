@@ -1,0 +1,227 @@
+@charset "utf-8";
+.textContent p {
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 20px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 0px;
+}
+
+body {
+   margin: 0;
+   padding: 10;
+   color: #CCC;
+   background-color: #000000;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+   line-height: 1.4;
+   /*
+   scrollbar-arrow-color: #e70318;
+   scrollbar-base-color:#000000;
+   scrollbar-shadow-color: #e70318;
+   scrollbar-highlight-color: #e70318;
+   scrollbar-dark-shadow-color: #000000;
+   scrollbar-3d-light-color: #000000;
+   scrollbar-track-color: #000000;
+   scrollbar-face-color: #e70318;
+   */
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+   padding: 0;   margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+   margin: 0;
+   padding: 0px;
+   height: auto;
+}
+a img { /* this selector removes the default blue border displayed in some      browsers around an image when it is surrounded by a link */
+   border: none;
+}
+
+/* Styling for links must remain in this order.  */
+a:link, a:visited{
+   color: #777;
+   text-decoration: none;
+}
+a:hover, a:active, a:focus { 
+   text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+   width: auto;
+   overflow: auto; /* this declaration makes the .container understand where    the floated columns within ends and contain them */
+   background-color: #000;
+   margin-top: 0;
+   margin-right: auto;
+   margin-bottom: 0;
+   margin-left: auto;
+   height: auto;
+}
+
+
+.sidebar1 {
+   float: left;
+   width: 120px;
+   background-color: #000000;
+   margin: 0px;
+   padding: 0px;
+}
+.content {
+   padding: 0px;
+   width: 600px;
+   float: left;
+   margin: 0px;
+   background-color: #000;
+   border-right-width: thin;
+   border-left-width: thin;
+   border-right-style: dashed;
+   border-left-style: dashed;
+   border-top-color: #900;
+   border-right-color: #900;
+   border-bottom-color: #900;
+   border-left-color: #900;
+   border-bottom-width: thin;
+   border-bottom-style: dashed;
+}
+.sidebar2 {
+   float: left;
+   width: 180px;
+   padding: 0px;
+   background-color: #000000;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+   padding: 0 15px 5px 40px;
+}
+
+/* ~~ The navigation list styles */
+ul.nav {
+   list-style: none; /* this removes the list marker */
+   border-top: 1px solid #666; /* this creates the top border for the links -   all others are placed using a bottom border on the LI */
+   margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+   border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your   links retain their button look even after being visited */
+   padding: 5px 5px 5px 15px;
+   display: block; /* this gives the link block properties causing it to fill   the whole LI containing it. This causes the entire area to react to a mouse     click. */
+   width: 160px;  /*this width makes the entire button clickable for IE6. */
+   text-decoration: none;
+   background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the           background and text color for both mouse and keyboard navigators */
+   background: #ADB96E;
+   color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right on the page. The  floated element must precede the element it should be next to on the page. */
+   float: right;
+   margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in the page. The   floated element must precede the element it should be next to on the page. */
+   float: left;
+   margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow: hidden on the .container is removed */
+   clear:both;
+   height:0;
+   font-size: 1px;
+   line-height: 0px;
+}
+.textContent {
+   padding: 10px;
+   background-color: #000;
+}
+a:hover {
+   text-decoration: none;
+   color: #666;
+}
+a:active {
+   text-decoration: none;
+   color: #666;
+}
+.horizontalLine {
+    height: 1px;
+    width: 100%;
+    background: #777;
+}
+
+.green {
+	color: #390;
+}
+
+.red {
+	color: #900;
+}
+
+ul li {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+ul li a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.topbar {
+	text-align: center;
+	font-size: 12px;
+}
+
+#noParaIndent p {
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 20px;
+	margin-bottom:0px
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+table {
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
+}
+
+td.icons {
+	width: 20%;
+}
+
+td.index {
+	width: 12%
+}
+
+td.aboutUs {
+	width: 18%;
+}
+
+td.ourDances {
+	width: 21%;
+}
+
+td.media {
+	width: 13%;
+}
+
+td.links {
+	width: 13%;
+}
+
+td.contactUs {
+	width: 21%;
+}
